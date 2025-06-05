@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: linear-gradient(to right, #005bff, #00aaff);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    flex: 1;
+    background: linear-gradient(to right, #00ff99, #66ccff);
+    padding: 1rem;
+}
+
+footer {
+    background: linear-gradient(to right, #ff0000, #ff6600);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+@media (min-width: 600px) {
+    header, main, footer {
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
