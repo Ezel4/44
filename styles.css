@@ -1,35 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Poppins", "Segoe UI", sans-serif;
+    background: radial-gradient(circle at top left, #f4fff0, #ebf6ff 55%, #e0ecff);
+    color: #0f1b33;
+}
+
+.pricing {
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 2rem;
+    padding: 3rem 1.5rem;
+}
+
+.pricing-card {
+    flex: 1 1 280px;
+    max-width: 320px;
+    border-radius: 28px;
+    padding: 2.5rem 2rem;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-}
-
-header {
-    background: linear-gradient(to right, #005bff, #00aaff);
-    color: white;
-    padding: 1rem;
+    align-items: center;
     text-align: center;
+    gap: 1.75rem;
+    color: #ffffff;
+    box-shadow: 0 20px 45px rgba(15, 27, 51, 0.12);
+    min-height: 420px;
 }
 
-main {
-    flex: 1;
-    background: linear-gradient(to right, #00ff99, #66ccff);
-    padding: 1rem;
+.pricing-card--life {
+    background: linear-gradient(150deg, #9be67a, #62d878 55%, #42d36d);
 }
 
-footer {
-    background: linear-gradient(to right, #ff0000, #ff6600);
-    color: white;
-    text-align: center;
-    padding: 1rem;
+.pricing-card--quicksleeper {
+    background: linear-gradient(150deg, #ade2ff, #6bbdff 55%, #4ea3ff);
 }
 
-@media (min-width: 600px) {
-    header, main, footer {
-        max-width: 800px;
-        margin-left: auto;
-        margin-right: auto;
+.pricing-card__badge {
+    font-size: 0.75rem;
+    letter-spacing: 0.24em;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.35);
+    color: #ffffff;
+    border-radius: 999px;
+    padding: 0.35rem 1.7rem;
+}
+
+.pricing-card__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    min-height: 120px;
+    width: 100%;
+}
+
+.pricing-card--lease .pricing-card__content {
+    margin-top: -1.5rem;
+}
+
+.pricing-card__title {
+    font-size: 1.45rem;
+    font-weight: 700;
+    line-height: 1.25;
+    margin: 0;
+}
+
+.pricing-card__subtitle {
+    font-size: 1rem;
+    font-weight: 500;
+    opacity: 0.85;
+    margin: 0;
+}
+
+.pricing-card__price {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-top: auto;
+}
+
+.pricing-card__amount {
+    font-size: 2.75rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.pricing-card__amount--highlight {
+    text-shadow: 0 4px 18px rgba(8, 60, 0, 0.25);
+}
+
+.pricing-card__note {
+    font-size: 0.95rem;
+    font-weight: 500;
+    opacity: 0.85;
+    line-height: 1.2;
+}
+
+.pricing-card__footer {
+    margin-top: auto;
+    font-size: 0.95rem;
+    font-weight: 500;
+    opacity: 0.85;
+}
+
+@media (max-width: 960px) {
+    .pricing-card {
+        max-width: 100%;
     }
 }
