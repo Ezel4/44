@@ -3,18 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Responsive Bleu Blanc Rouge</title>
+    <title>QuickSleeper 6 | Design modernisé</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Bienvenue</h1>
+    <header class="site-header">
+        <div class="container nav">
+            <div class="brand">DentalHiTec</div>
+            <a class="ghost-btn" href="#contact">Demander une démo</a>
+        </div>
     </header>
+
     <main>
-        <p>Contenu principal</p>
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <p class="pill">Nouvelle génération d'anesthésie contrôlée</p>
+                    <h1>QuickSleeper 6</h1>
+                    <p class="subtitle">Une expérience d'injection plus précise, plus douce et plus rassurante pour le praticien comme pour le patient.</p>
+                    <div class="cta-row">
+                        <a class="btn btn-primary" href="#caracteristiques">Voir les avantages</a>
+                        <a class="btn btn-secondary" href="#contact">Parler à un expert</a>
+                    </div>
+                </div>
+                <aside class="hero-card" aria-label="Points forts">
+                    <h2>Pourquoi ce redesign ?</h2>
+                    <ul>
+                        <li>Hiérarchie visuelle claire</li>
+                        <li>Meilleure lisibilité mobile/desktop</li>
+                        <li>Appels à l'action plus visibles</li>
+                        <li>Ambiance premium et médicale</li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+
+        <section id="caracteristiques" class="features container">
+            <h2>Caractéristiques clés</h2>
+            <div class="cards">
+                <article class="card">
+                    <h3>Injection pilotée</h3>
+                    <p>Contrôle optimisé du débit pour des gestes plus constants et plus confortables.</p>
+                </article>
+                <article class="card">
+                    <h3>Interface intuitive</h3>
+                    <p>Navigation simplifiée avec des informations essentielles accessibles en un coup d'œil.</p>
+                </article>
+                <article class="card">
+                    <h3>Confiance patient</h3>
+                    <p>Réduction de l'appréhension grâce à une administration progressive et maîtrisée.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="stats">
+            <div class="container stats-grid">
+                <div>
+                    <p class="stat">+ ergonomique</p>
+                    <p>Design orienté usage clinique</p>
+                </div>
+                <div>
+                    <p class="stat">+ rassurant</p>
+                    <p>Parcours visuel apaisant pour le patient</p>
+                </div>
+                <div>
+                    <p class="stat">+ efficace</p>
+                    <p>Informations clés mises en avant</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact container">
+            <h2>Prêt à moderniser votre pratique&nbsp;?</h2>
+            <p>Contactez l'équipe DentalHiTec pour découvrir QuickSleeper 6 et organiser une démonstration personnalisée.</p>
+            <a class="btn btn-primary" href="#">Être recontacté</a>
+        </section>
     </main>
-    <footer>
-        <p>Pied de page</p>
+
+    <footer class="site-footer">
+        <div class="container footer-wrap">
+            <p>© 2026 DentalHiTec — Concept de page produit modernisée.</p>
+        </div>
     </footer>
 </body>
 </html>
